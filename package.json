@@ -1,11 +1,23 @@
 {
   "name": "@patarapolw/prettyprint",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "Pacharapol Withayasakpunt <patarapolw@gmail.com> (https://polvcode.dev)",
   "license": "MIT",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "pp": "lib/cli.js"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "prepack": "tsc"
   },
   "devDependencies": {
     "@types/node": "^13.7.4",
