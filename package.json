@@ -7,7 +7,8 @@
   "license": "MIT",
   "files": [
     "lib",
-    "src"
+    "src",
+    "tsconfig.json"
   ],
   "publishConfig": {
     "access": "public"
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "prepack": "tsc"
+    "prepack": "npx tsc"
   },
   "devDependencies": {
     "@types/node": "^13.7.4",
