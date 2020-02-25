@@ -23,12 +23,12 @@ pp(OBJECT)
 [Run it directly with npx](https://www.npmjs.com/package/npx#examples)
 
 ```sh
-npx github:patarapolw/prettyprint OBJECT_AS_JSON
+npx github:patarapolw/prettyprint OBJECT_AS_JS_EVAL
 ```
 
 Or, install as global
 
 ```sh
 npm i -g @patarapolw/prettyprint
-pp OBJECT_AS_JSON
+pp OBJECT_AS_JS_EVAL
 ```
