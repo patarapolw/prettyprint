@@ -1,11 +1,15 @@
 import util from 'util'
 
 export function pp (obj: any, options: util.InspectOptions = {}) {
-  console.log(util.inspect(cloneAndReplace(obj), {
+  console.log(ppRaw(obj, options))
+}
+
+export function ppRaw (obj: any, options: util.InspectOptions = {}) {
+  return util.inspect(cloneAndReplace(obj), {
     colors: true,
     depth: null,
     ...options
-  }))
+  })
 }
 
 class MultilineString {
